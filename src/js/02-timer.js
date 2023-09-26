@@ -9,6 +9,7 @@ const timerHours = document.querySelector('[data-hours]');
 const timerMinutes = document.querySelector('[data-minutes]');
 const timerSeconds = document.querySelector('[data-seconds]');
 
+startBtn.setAttribute('disabled', 'true');
 let userDate = 0;
 
 const options = {
