@@ -36,7 +36,8 @@ function checkedCorrectDate(date) {
 
 function deadlineTime(date) {
   const currentDate = new Date().getTime();
-  return (countDownTime = date - currentDate);
+  const countDownTime = date - currentDate;
+  return countDownTime;
 }
 
 function addLeadingZero(value) {
