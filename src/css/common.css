@@ -20,6 +20,9 @@ button {
   border: none;
   cursor: pointer;
 }
+button:disabled {
+  cursor: not-allowed;
+}
 
 .btn-box {
   display: flex;
@@ -34,9 +37,6 @@ button {
   font-size: 28px;
 }
 
-.start-btn:disabled {
-  cursor: not-allowed;
-}
 .stop-btn {
   padding: 30px 60px;
   background-color: red;
@@ -57,9 +57,7 @@ button {
   height: 30px;
   padding: 0 35px 0 35px;
 }
-.start-timer-btn:disabled {
-  cursor: not-allowed;
-}
+
 .timer {
   margin-top: 20px;
   display: flex;
@@ -78,4 +76,9 @@ button {
 }
 .label {
   font-size: 12px;
+}
+
+.promise-btn {
+  background-color: green;
+  padding: 10px 20px;
 }

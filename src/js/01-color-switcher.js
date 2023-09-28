@@ -4,6 +4,7 @@ const body = document.querySelector('body');
 
 function setColor() {
   startBtn.setAttribute('disabled', 'true');
+  stopBtn.removeAttribute('disabled');
 
   const colorInterval = setInterval(() => {
     function getRandomHexColor() {
@@ -17,6 +18,7 @@ function setColor() {
   stopBtn.addEventListener('click', () => {
     clearInterval(colorInterval);
     startBtn.removeAttribute('disabled');
+    stopBtn.setAttribute('disabled', 'true');
   });
 }
 
